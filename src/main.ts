@@ -6,12 +6,7 @@ const port = process.env.PORT || 3000;
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // Habilitar CORS correctamente
-  const allowlist = new Set<string>([
-    'http://localhost:5173',
-    'http://localhost:3000',
-    'http://localhost:5174',
-    'https://pos-crm-nova.up.railway.app',
-  ]);
+  const allowlist = new Set<string>(['https://tecnofull-crm.up.railway.app']);
 
   app.enableCors({
     origin: (origin, cb) => {
