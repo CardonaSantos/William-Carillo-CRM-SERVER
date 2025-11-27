@@ -8,7 +8,7 @@ async function bootstrap() {
   // Habilitar CORS correctamente
   const allowlist = new Set<string>([
     'http://localhost:5173',
-    'https://tecnofull-crm.up.railway.app',
+    'https://crm-wr.up.railway.app',
   ]);
 
   app.enableCors({
